@@ -384,8 +384,16 @@ export default function ProfilePage() {
           aria-label="Dark mode"
           onClick={toggleTheme}
         >
-          <span className="flex h-6 w-11 items-center rounded-full bg-slate-300 p-0.5 [&>span]:size-5 [&>span]:rounded-full [&>span]:bg-white ">
-            <span />
+          <span
+            className={`flex h-6 w-11 items-center rounded-full p-0.5 transition-colors ${
+              theme === "dark" ? "bg-violet-600" : "bg-slate-300"
+            }`}
+          >
+            <span
+              className={`size-5 rounded-full bg-white transition-transform ${
+                theme === "dark" ? "translate-x-5" : ""
+              }`}
+            />
           </span>
           <span>
             {theme === "dark" ? "Dark mode" : "Light mode"}

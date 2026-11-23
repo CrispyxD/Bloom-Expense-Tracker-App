@@ -40,7 +40,7 @@ export default function BudgetsPage() {
           Add a budget
         </button>
       </div>
-      <div className="mb-4 flex items-center gap-8 p-5 [&>div]:grid [&>div]:gap-2 [&>div>strong]:text-2xl [&>div>strong]:font-bold max-[620px]:flex-wrap max-[620px]:gap-4 max-[620px]:p-4 max-[620px]:[&>div>strong]:text-xl rounded-xl border border-slate-200 bg-white shadow-sm transition-colors dark:border-[#2d303c] dark:bg-[#191b25] ">
+      <div className="mb-4 flex items-center gap-8 p-5 [&>div:not(:last-child)]:grid [&>div:not(:last-child)]:gap-2 [&>div>strong]:text-2xl [&>div>strong]:font-bold max-[620px]:flex-wrap max-[620px]:gap-4 max-[620px]:p-4 max-[620px]:[&>div>strong]:text-xl rounded-xl border border-slate-200 bg-white shadow-sm transition-colors dark:border-[#2d303c] dark:bg-[#191b25] ">
         <div>
           <span className="text-[10px] font-bold tracking-[.8px] text-slate-400 ">
             TOTAL SPENT

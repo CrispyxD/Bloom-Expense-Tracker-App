@@ -283,7 +283,7 @@ export default function Page() {
               <span>{currency(maxChart * 0.75, profile.currency, true)}</span>
               <span>{currency(maxChart * 0.5, profile.currency, true)}</span>
               <span>{currency(maxChart * 0.25, profile.currency, true)}</span>
-              <span>$0</span>
+              <span>{currency(0, profile.currency, true)}</span>
             </div>
             <div className="flex min-h-[160px] flex-1 items-end justify-around gap-2 border-b border-l border-slate-100 bg-[repeating-linear-gradient(to_bottom,transparent_0,transparent_calc(25%-1px),#f1f1f6_calc(25%-1px),#f1f1f6_25%)] px-2 dark:border-slate-700 ">
               {visibleChartData.map((item) => (
