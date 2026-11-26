@@ -1008,7 +1008,7 @@ export default function DashboardApp({ children }: { children: ReactNode }) {
               <button className="inline-flex min-h-10 items-center justify-center gap-2 rounded-lg bg-violet-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-violet-700 active:scale-[.98] disabled:cursor-not-allowed disabled:opacity-60 max-[620px]:min-h-9 max-[620px]:gap-1 max-[620px]:px-2.5 max-[620px]:text-[10px] w-full justify-center " type="submit" disabled={authLoading}>{authLoading ? "Please wait…" : authMode === "register" ? "Create account" : "Sign in"}</button>
             </form>
             <p className="mt-5 text-center text-xs text-violet-700 dark:text-violet-300 ">{authMode === "register" ? "Already have an account?" : "New to Bloom?"}{" "}<button onClick={() => { setAuthMode(authMode === "register" ? "login" : "register"); setShowPassword(false); setAuthError(""); }}>{authMode === "register" ? "Sign in" : "Create an account"}</button></p>
-            <p className="mt-5 text-center text-[11px] text-slate-400 "><Icon name="leaf" size={15} /> Your finance data is private to your account.</p>
+            <p className="mt-5 text-center text-[11px] text-slate-400 ">Your finance data is private to your account.</p>
             {apiError && <button className="mt-3 rounded-lg bg-violet-50 px-3 py-2 text-xs font-semibold text-violet-700 dark:bg-violet-950/50 dark:text-violet-200 " onClick={() => window.location.reload()}>Retry connection</button>}
           </motion.section>
         </motion.main>
@@ -1079,7 +1079,7 @@ export default function DashboardApp({ children }: { children: ReactNode }) {
                         >
                           <div className="mb-3 flex items-center justify-between text-sm font-semibold text-slate-700 dark:text-slate-100 ">
                             <button
-                              className="grid size-[30px] place-items-center rounded-lg bg-transparent text-slate-500 hover:bg-violet-50 hover:text-violet-700 dark:hover:bg-violet-950/50 "
+                              className="grid size-[30px] place-items-center rounded-lg bg-transparent text-slate-500 hover:bg-violet-50 hover:text-violet-700 dark:hover:bg-violet-950/50 [&_svg]:rotate-90"
                               type="button"
                               aria-label="Previous month"
                               onClick={() =>

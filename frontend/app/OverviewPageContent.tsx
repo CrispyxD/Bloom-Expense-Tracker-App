@@ -377,11 +377,6 @@ export default function Page() {
         </div>
         {renderTransactionsTable(recentTransactions)}
       </section>
-      <div className="flex items-center justify-center gap-2 py-6 text-xs text-slate-400 ">
-        <span>Made for your money journey</span>
-        <span className="text-violet-500 ">✳</span>
-        <span>One mindful choice at a time.</span>
-      </div>
       </motion.section>
     </MotionConfig>
   );
